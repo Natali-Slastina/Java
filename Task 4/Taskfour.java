@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Taskfour {
     public static void main(String[] args) {
+        //Ввести три числа с клавиатуры x, y, z
         Scanner num = new Scanner(System.in);
         System.out.println("Enter your x, y, z"); 
         double x, y, z;
-        //Ввести три числа с клавиатуры x, y, z
         x = num.nextDouble();
         y = num.nextDouble();
         z = num.nextDouble();
