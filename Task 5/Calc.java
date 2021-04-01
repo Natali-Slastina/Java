@@ -19,7 +19,7 @@ public class Calc {
         System.out.println("Your sim is " + sim);
 
         //В зависимости от символа вывести в консоль результат выполнения соответствующей арифметической операции
-                if (sim =='*' || sim == '+' || sim =='-' || sim =='/'){
+        if (sim =='*' || sim == '+' || sim =='-' || sim =='/'){
             double result=0;
             switch (sim) {
                 case '*':
@@ -37,7 +37,8 @@ public class Calc {
             }
             System.out.println("result is  " + result);
 
-        }else
+        }
+        else
             System.out.println("You entered an invalid value");
 
     }
