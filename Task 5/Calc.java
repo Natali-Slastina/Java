@@ -19,32 +19,25 @@ public class Calc {
         System.out.println("Your sim is " + sim);
 
         //В зависимости от символа вывести в консоль результат выполнения соответствующей арифметической операции
-        if (sim =='*' || sim == '+' || sim =='-' || sim =='/'){
-            double result;
+                if (sim =='*' || sim == '+' || sim =='-' || sim =='/'){
+            double result=0;
             switch (sim) {
                 case '*':
                     result = x * y;
-                    System.out.println("result is  " + result);
                     break;
                 case '+':
                     result = x + y;
-                    System.out.println("result is " + result);
                     break;
                 case '-':
                     result = x - y;
-                    System.out.println("result is " + result);
                     break;
                 case '/':
                     result = x / y;
-                    System.out.println("result is " + result);
                     break;
-                default:
-                    System.out.println("Вы ввели некорректный символ - " + sim);
-
             }
+            System.out.println("result is  " + result);
 
-        }
-        else
+        }else
             System.out.println("You entered an invalid value");
 
     }
