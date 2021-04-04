@@ -28,7 +28,7 @@ public class Taskseven {
             System.out.print("] \n");
             for (int i = 0; i < size; i++) {
                 if (myArray[i] == x || myArray[i] == y || myArray[i] == z)
-                    System.out.println("Your items " + myArray[i] + ". Данное значение имеется в константах");
+                    System.out.println("Your item " + myArray[i] + ". Данное значение имеется в константах");
             }
         } else if (dim == 2) {
             System.out.println("Enter number of rows");
@@ -49,7 +49,7 @@ public class Taskseven {
             for (int i = 0; i < rows; i++) {
                 for (int j = 0; j < cols; j++) {
                     if (myArray[i][j] == x || myArray[i][j] == y || myArray[i][j] == z)
-                        System.out.println("Your items " + myArray[i][j] + ". Данное значение имеется в константах");
+                        System.out.println("Your item " + myArray[i][j] + ". Данное значение имеется в константах");
                 }
             }
         } else
