@@ -1,4 +1,5 @@
-package com.max.idea;
+//package com.max.idea;
+
 import java.util.Scanner;
 import java.util.Arrays;
 
@@ -24,10 +25,10 @@ public class Taskseven {
 
                 System.out.print(myArray[i] + " ");
             }
-            System.out.print("]");
+            System.out.print("] \n");
             for (int i = 0; i < size; i++) {
                 if (myArray[i] == x || myArray[i] == y || myArray[i] == z)
-                    System.out.print("Your items " + myArray[i] + ". Данное значение имеется в константах");
+                    System.out.println("Your items " + myArray[i] + ". Данное значение имеется в константах");
             }
         }
         else if(dim ==2){
@@ -49,7 +50,7 @@ public class Taskseven {
             for (int i = 0; i < sizea; i++) {
                 for (int j = 0; j < sizeb; j++) {
                     if (myArray[i][j] == x || myArray[i][j] == y || myArray[i][j] == z)
-                        System.out.print("Your items " + myArray[i][j] + ". Данное значение имеется в константах");
+                        System.out.println("Your items " + myArray[i][j] + ". Данное значение имеется в константах");
                 }
             }
         }
