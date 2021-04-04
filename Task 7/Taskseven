@@ -10,11 +10,11 @@ public class Taskseven {
         final double z = 3.3333;
         Scanner scan = new Scanner(System.in);
         System.out.println("Choose type of your array \n 1 - if your array - one-dimensional \n 2 - if your array -two-dimensional");
-        int dim= scan.nextInt();
-        if (dim ==1){
+        int dim = scan.nextInt();
+        if (dim == 1) {
             System.out.println("Enter the length of your array");
             int size = scan.nextInt();
-            double [] myArray = new double[size];
+            double[] myArray = new double[size];
             System.out.println("Enter items of your array");
             for (int i = 0; i < size; i++) {
                 myArray[i] = scan.nextDouble();
@@ -30,16 +30,15 @@ public class Taskseven {
                 if (myArray[i] == x || myArray[i] == y || myArray[i] == z)
                     System.out.println("Your items " + myArray[i] + ". Данное значение имеется в константах");
             }
-        }
-        else if(dim ==2){
+        } else if (dim == 2) {
             System.out.println("Enter number of rows");
             int rows = scan.nextInt();
             System.out.println("Enter number of columns");
             int cols = scan.nextInt();
-            double [][] myArray = new double[rows][cols];
+            double[][] myArray = new double[rows][cols];
             System.out.println("Enter items of your array. First the first line, etc");
             for (int i = 0; i < rows; i++) {
-                for(int j = 0; j < cols; j++) {
+                for (int j = 0; j < cols; j++) {
                     myArray[i][j] = scan.nextDouble();
                 }
             }
@@ -53,8 +52,7 @@ public class Taskseven {
                         System.out.println("Your items " + myArray[i][j] + ". Данное значение имеется в константах");
                 }
             }
-        }
-        else
+        } else
             System.out.println("You entered an invalid value");
 
     }
