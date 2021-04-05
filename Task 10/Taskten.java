@@ -1,4 +1,4 @@
-package com.max.idea;
+//package com.max.idea;
 
 import java.util.Scanner;
 import java.util.Arrays;
