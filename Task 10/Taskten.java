@@ -28,7 +28,7 @@ public class Taskten {
             //вывод первой строки матрицы на экран, где каждый элемент умножается на 3
             for (int j = 0; j < cols; j++) {
                 myArray[0][j] *= 3;
-                }
+            }
             System.out.println("1st line * 3:");
             System.out.println(Arrays.toString(myArray[0]));
 
@@ -36,3 +36,4 @@ public class Taskten {
             System.out.println("Enter number not equal to zero");
     }
 }
+
