@@ -1,6 +1,7 @@
 //package com.max.idea;
 
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Tasknine {
     public static void main(String[] args) {
@@ -15,9 +16,7 @@ public class Tasknine {
                 myArray[i] = scan.nextDouble();
             }
             System.out.println("Your array:");
-            for (int i = 0; i < size; i++) {
-                System.out.print(myArray[i] + " ");
-            }
+            System.out.println(Arrays.toString(myArray));
             //Посчитайте среднее арифметическое элементов массива
             double sum = 0;
             for (int i = 0; i < size; i++) {
@@ -29,10 +28,8 @@ public class Tasknine {
             for (int i = 0; i < size; i++)
                 myArray[i] *= aver;
             System.out.println("New array: ");
-            for (int i = 0; i < size; i++)
-                System.out.print(myArray[i] + " ");
+            System.out.println(Arrays.toString(myArray));
         } else
             System.out.println("Your array []. Enter length not equal to zero");
-
     }
 }
