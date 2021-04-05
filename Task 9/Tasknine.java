@@ -27,7 +27,7 @@ public class Tasknine {
             System.out.println("\nAverage of your array " + aver);
             //Произведите вывод массива на экран, где каждый элемент массива умножается на среднее арифметическое
             for (int i = 0; i < size; i++)
-                myArray[i] = myArray[i] * aver;
+                myArray[i] *= aver;
             System.out.println("New array: ");
             for (int i = 0; i < size; i++)
                 System.out.print(myArray[i] + " ");
