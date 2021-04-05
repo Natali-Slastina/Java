@@ -15,7 +15,7 @@ public class Taskeight {
                 if (i % 2 != 0)
                     sum += i;
             }
-            System.out.print(sum);
+            System.out.print("Sum of uneven numbers is "+sum);
         }
     }
 }
