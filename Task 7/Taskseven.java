@@ -21,12 +21,7 @@ public class Taskseven {
                     myArray[i] = scan.nextDouble();
                 }
                 System.out.println("Your array.");
-                System.out.print("[");
-                for (int i = 0; i < size; i++) {
-
-                    System.out.print(myArray[i] + " ");
-                }
-                System.out.print("] \n");
+                System.out.println(Arrays.toString(myArray));
                 for (int i = 0; i < size; i++) {
                     if (myArray[i] == x || myArray[i] == y || myArray[i] == z)
                         System.out.println("Your item " + myArray[i] + ". Данное значение имеется в константах");
