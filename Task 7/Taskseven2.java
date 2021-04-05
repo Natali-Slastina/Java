@@ -14,10 +14,9 @@ public class Taskseven {
         if (dim == 1) {
             System.out.println("Enter the length of your array");
             int size = scan.nextInt();
-            if (size == 0)
-                System.out.println("You entered an invalid value");
-            else {
-                double[] myArray = new double[size];
+            double[] myArray = new double[size];
+            if (size != 0) {
+
                 System.out.println("Enter items of your array");
                 for (int i = 0; i < size; i++) {
                     myArray[i] = scan.nextDouble();
@@ -34,41 +33,37 @@ public class Taskseven {
                         System.out.println("Your item " + myArray[i] + ". Данное значение имеется в константах");
                 }
             }
+            else
+                System.out.println("Your array []. Enter length not equal to zero");
         } else if (dim == 2) {
             System.out.println("Enter number of rows");
             int rows = scan.nextInt();
-            if (rows == 0)
-                System.out.println("You entered an invalid value");
-            else {
-                System.out.println("Enter number of columns");
-                int cols = scan.nextInt();
-                if (cols == 0)
-                    System.out.println("You entered an invalid value");
-                else {
-                    double[][] myArray = new double[rows][cols];
-                    System.out.println("Enter items of your array. First the first line, etc");
-                    for (int i = 0; i < rows; i++) {
-                        for (int j = 0; j < cols; j++) {
-                            myArray[i][j] = scan.nextDouble();
-                        }
+            System.out.println("Enter number of columns");
+            int cols = scan.nextInt();
+            double[][] myArray = new double[rows][cols];
+            if (rows !=0 && cols != 0) {
+
+                System.out.println("Enter items of your array. First the first line, etc");
+                for (int i = 0; i < rows; i++) {
+                    for (int j = 0; j < cols; j++) {
+                        myArray[i][j] = scan.nextDouble();
                     }
-                    System.out.println("Your array.");
-                    for (int i = 0; i < rows; i++) {
-                        System.out.println(Arrays.toString(myArray[i]));
-                    }
-                    for (int i = 0; i < rows; i++) {
-                        for (int j = 0; j < cols; j++) {
-                            if (myArray[i][j] == x || myArray[i][j] == y || myArray[i][j] == z)
-                                System.out.println("Your item " + myArray[i][j] + ". Данное значение имеется в константах");
-                        }
+                }
+                System.out.println("Your array.");
+                for (int i = 0; i < rows; i++) {
+                    System.out.println(Arrays.toString(myArray[i]));
+                }
+                for (int i = 0; i < rows; i++) {
+                    for (int j = 0; j < cols; j++) {
+                        if (myArray[i][j] == x || myArray[i][j] == y || myArray[i][j] == z)
+                            System.out.println("Your item " + myArray[i][j] + ". Данное значение имеется в константах");
                     }
                 }
             }
+            else
+                System.out.println("Enter number not equal to zero");
         } else
             System.out.println("You entered an invalid value");
 
     }
 }
-
-
-
