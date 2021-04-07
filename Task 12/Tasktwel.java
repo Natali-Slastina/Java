@@ -8,8 +8,7 @@ public class Tasktwel {
         //Напишите программу, принимающую на вход строку “I like Java!!!”
         System.out.println("Enter your string  \"I like Java!!!\"");
         String str = scan.nextLine();
-        boolean res;
-        if(res = str.equals("I like Java!!!")){
+        if(str.equals("I like Java!!!") == true){
             //Проверить, содержит ли строка подстроку “Java” (используйте contains()).
             boolean got = str.contains("Java");
             System.out.println("String contains \"Java\" : " + got);
