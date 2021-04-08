@@ -8,7 +8,7 @@ public class Taskfot {
         Random random = new Random();
         int[] num = new int[15];
         for (int i = 0; i < num.length; i++) {
-            num[i] = (int) Math.round((Math.random() * 41) - 20);
+            num[i] = (int) Math.round((Math.random() * 21) - 20);
             System.out.print(num[i] + " ");
         }
         //Выведите максимальный и минимальный элемент массива.
