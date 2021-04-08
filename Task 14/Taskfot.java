@@ -1,7 +1,5 @@
 //package com.max.idea;
 
-import java.util.Random;
-
 public class Taskfot {
     public static void main(String[] args) {
         //Напишите программу, заполняющую массив из 15 элементов рандомными значениями в диапазоне от -20 до 20
