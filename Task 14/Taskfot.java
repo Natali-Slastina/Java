@@ -9,7 +9,7 @@ public class Taskfot {
         int[] num = new int[15];
         for (int i = 0; i < num.length; i++) {
             num[i] = (int) Math.round((Math.random() * 41) - 20);
-            System.out.println(num[i]);
+            System.out.print(num[i] + " ");
         }
         //Выведите максимальный и минимальный элемент массива.
         int min, max;
@@ -21,8 +21,8 @@ public class Taskfot {
                 max = num[i];
             }
         }
-        System.out.println("min is: " + min + "; max is: " + max);
-        //Из максимального и минимального значения выведите наибольшее по модулю.
+        System.out.println("\nmin is: " + min + "; max is: " + max);
+        //Выведите максимальное по модулю
         int res = Math.max(Math.abs(min), Math.abs(max));
         System.out.println("Max abs is: " + res);
     }
