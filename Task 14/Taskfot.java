@@ -1,7 +1,6 @@
 //package com.max.idea;
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class Taskfot {
     public static void main(String[] args) {
