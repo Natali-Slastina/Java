@@ -22,7 +22,7 @@ public class Taskfot {
             }
         }
         System.out.println("\nmin is: " + min + "; max is: " + max);
-        //Выведите максимальное по модулю
+        //Выведите из них максимальное по модулю
         int res = Math.max(Math.abs(min), Math.abs(max));
         System.out.println("Max abs is: " + res);
     }
