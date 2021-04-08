@@ -5,7 +5,6 @@ import java.util.Random;
 public class Taskfot {
     public static void main(String[] args) {
         //Напишите программу, заполняющую массив из 15 элементов рандомными значениями в диапазоне от -20 до 20
-        Random random = new Random();
         int[] num = new int[15];
         for (int i = 0; i < num.length; i++) {
             num[i] = (int) Math.round((Math.random() * 40) - 20);
