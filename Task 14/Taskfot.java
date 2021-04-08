@@ -23,6 +23,9 @@ public class Taskfot {
         System.out.println("\nmin is: " + min + "; max is: " + max);
         //Выведите из них максимальное по модулю
         int res = Math.max(Math.abs(min), Math.abs(max));
-        System.out.println("Max abs is: " + res);
+        if (Math.abs(min) == Math.abs(max))
+            System.out.println("Abs Max is equals Abs min");
+        else
+            System.out.println("Max abs is: " + res);
     }
 }
