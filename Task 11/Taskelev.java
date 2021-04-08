@@ -13,14 +13,13 @@ public class Taskelev {
         Integer num1 = scan.nextInt();
         //Сравнить 2 числа и вывести большее на экран .
         Integer num2 = Integer.valueOf(str);
-        int result;
-        result = num1.compareTo(num2);
+        int result = num1.compareTo(num2);
         if (result == 0)
             System.out.println("Your numbers is equals");
         else if (result == 1)
             System.out.println("Max is " + num1);
         else
-            System.out.println("Max is" + num2);
+            System.out.println("Max is " + num2);
         //Выведите также меньшее число на экран, предварительно переконвертировать его в тип double
         double num3 = num2;
         double result2 = Math.min(num1, num3);
