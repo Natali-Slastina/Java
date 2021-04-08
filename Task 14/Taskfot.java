@@ -7,7 +7,7 @@ public class Taskfot {
         //Напишите программу, заполняющую массив из 15 элементов рандомными значениями в диапазоне от -20 до 20
         int[] num = new int[15];
         for (int i = 0; i < num.length; i++) {
-            num[i] = (int) Math.round((Math.random() * 40) - 20);
+            num[i] = (int) (Math.random() * 41) - 20;
             System.out.print(num[i] + " ");
         }
         //Выведите максимальный и минимальный элемент массива.
