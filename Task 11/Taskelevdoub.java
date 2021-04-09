@@ -8,7 +8,7 @@ public class Taskelevdoub {
         //Ввести первое  число с клавиатуры и записать его в строковую переменную.
         System.out.println("Enter your first value");
         String str = scan.nextLine();
-        Double num1 = Double.valueOf(str);
+        double num1 = Double.valueOf(str);
         //Ввести второе число с клавиатуры и сохранить его в целочисленную переменную типа int.
         System.out.println("Enter your second value");
         int num2 = (int) scan.nextDouble();
