@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Taskelev {
+public class Taskelevdoub {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         //Ввести первое  число с клавиатуры и записать его в строковую переменную.
