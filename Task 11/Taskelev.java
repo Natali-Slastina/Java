@@ -23,6 +23,7 @@ public class Taskelev {
         //Выведите также меньшее число на экран, предварительно переконвертировать его в тип double
         double num3 = num2;
         double result2 = Math.min(num1, num3);
-        System.out.println("Min is " + result2);
+        if (num1 != num3)
+            System.out.println("Min is " + result2);
     }
 }
