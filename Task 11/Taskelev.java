@@ -8,9 +8,9 @@ public class Taskelev {
         //Ввести первое  число с клавиатуры и записать его в строковую переменную.
         System.out.println("Enter your first value as x.xxx if your value is double");
         String str = scan.nextLine();
-        //Ввести второе число с клавиатуры и сохранить его в целочисленную переменную типа int.
+        //Ввести второе число с клавиатуры 
         System.out.println("Enter your second value");
-        Integer num1 = scan.nextInt();
+        Double num1 = scan.nextDouble();
         //Сравнить 2 числа и вывести большее на экран
         Double num2 = Double.valueOf(str);
         int result = num1.compareTo(num2);
