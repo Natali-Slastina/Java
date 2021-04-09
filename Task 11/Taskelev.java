@@ -10,7 +10,7 @@ public class Taskelev {
         String str = scan.nextLine();
         //Ввести второе число с клавиатуры и сохранить его в целочисленную переменную типа int.
         System.out.println("Enter your second value");
-        Double num1 = scan.nextDouble();
+        Integer num1 = scan.nextInt();
         //Сравнить 2 числа и вывести большее на экран
         Double num2 = Double.valueOf(str);
         int result = num1.compareTo(num2);
