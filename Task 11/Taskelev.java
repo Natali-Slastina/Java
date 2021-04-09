@@ -22,7 +22,7 @@ public class Taskelev {
             System.out.println("Max is " + num1);
         else
             System.out.println("Max is " + num3);
-        //Выведите также меньшее число на экран, предварительно переконвертировать его в тип double (строка 17)
+        //Выведите также меньшее число на экран, предварительно переконвертировать его в тип double (17)
         double result2 = Math.min(num1, num3);
         if (num1 != num3)
             System.out.println("Min is " + result2);
