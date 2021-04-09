@@ -6,13 +6,13 @@ public class Taskelev {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         //Ввести первое  число с клавиатуры и записать его в строковую переменную.
-        System.out.println("Enter your first value");
+        System.out.println("Enter your first value as x.xxx if your value is double");
         String str = scan.nextLine();
         //Ввести второе число с клавиатуры и сохранить его в целочисленную переменную типа int.
         System.out.println("Enter your second value");
-        Integer num1 = scan.nextInt();
-        //Сравнить 2 числа и вывести большее на экран .
-        Integer num2 = Integer.valueOf(str);
+        Double num1 = scan.nextDouble();
+        //Сравнить 2 числа и вывести большее на экран
+        Double num2 = Double.valueOf(str);
         int result = num1.compareTo(num2);
         if (result == 0)
             System.out.println("Your numbers is equals");
