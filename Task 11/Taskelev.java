@@ -12,7 +12,6 @@ public class Taskelev {
         //Ввести второе число с клавиатуры и сохранить его в целочисленную переменную типа int.
         System.out.println("Enter your second value");
         int num2 = (int) scan.nextDouble();
-        //Сравнить 2 числа и вывести большее на экран
         double num3 = num2;
         System.out.println("Your second value is updated: " + num3);
         //Сравнить 2 числа и вывести большее на экран
