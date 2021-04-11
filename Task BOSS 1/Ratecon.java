@@ -6,11 +6,11 @@ public class Ratecon {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter your cash in RUB");
-        float cash = scan.nextFloat();
-        //double cash = scan.nextDouble();
+        //float cash = scan.nextFloat();
+        double cash = scan.nextDouble();
         System.out.println("Enter dollar rate");
-        float rate = scan.nextFloat();
-        //double rate = scan.nextDouble();
+        //float rate = scan.nextFloat();
+        double rate = scan.nextDouble();
         if (cash == 0 || rate == 0)
             System.out.println("You enter value = 0");
         else if (cash < 0 || rate < 0)
