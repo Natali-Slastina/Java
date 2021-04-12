@@ -12,7 +12,6 @@ public class Puzzle {
         if (a == 1) {
             System.out.println("It's not onion! Enter you answer: ");
             String attem1 = scan.next();
-            System.out.println(attem1.equals(correct));
             if (attem1.equals(correct))
                 System.out.println("Win!!");
             else {
