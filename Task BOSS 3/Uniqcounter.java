@@ -7,9 +7,9 @@ public class Uniqcounter {
         System.out.println("Enter your n of your lines");
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
-        if (n<0)
+        if (n < 0)
             System.out.println("You entered invalid value");
-        else if(n==0)
+        else if (n == 0)
             System.out.println("You entered zero lines");
         else {
             String[] lines = new String[n];
