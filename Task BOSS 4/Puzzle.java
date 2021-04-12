@@ -46,7 +46,11 @@ public class Puzzle {
                                 System.exit(0);
                             } else
                                 System.out.println("No.. Mb on another time");
-                        }
+                        } else if (attem3.equals(correct)){
+                            System.out.println("Win!!");
+                            System.exit(0);
+                        } else
+                            System.out.println("No.. Mb on another time");
                     }
                 } else if (attem2.equals(correct)) {
                     System.out.println("Win!!");
