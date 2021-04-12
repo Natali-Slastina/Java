@@ -7,11 +7,12 @@ public class Puzzle {
         System.out.println("Сидит дед, во сто шуб одет, кто его раздевает, тот слезы проливает");
         String correct = "Заархивированный вирус";
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter 1 - if you need the hint or 2 - if don't");
+        System.out.println("Enter 1 - if you need the hint or 2 - if you don't");
         int a = scan.nextInt();
+        scan.nextLine();
         if (a == 1) {
             System.out.println("It's not onion! Enter you answer: ");
-            String attem1 = scan.next();
+            String attem1 = scan.nextLine();
             if (attem1.equals(correct))
                 System.out.println("Win!!");
             else {
@@ -20,19 +21,19 @@ public class Puzzle {
             }
         } else if (a == 2) {
             System.out.println("Enter you answer");
-            String attem1 = scan.next();
+            String attem1 = scan.nextLine();
             if (attem1.equals(correct)) {
                 System.out.println("Win!!");
                 System.exit(0);
             } else
                 System.out.println("No.. Try again!");
-            String attem2 = scan.next();
+            String attem2 = scan.nextLine();
             if (attem2.equals(correct)) {
                 System.out.println("Win!!");
                 System.exit(0);
             } else
                 System.out.println("No.. Try again!");
-            String attem3 = scan.next();
+            String attem3 = scan.nextLine();
             if (attem3.equals(correct))
                 System.out.println("Win!!");
             else
