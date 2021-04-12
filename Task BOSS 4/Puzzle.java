@@ -9,7 +9,7 @@ public class Puzzle {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter 1 - if you need the hint or 2 - if don't");
         int a = scan.nextInt();
-        if(a==1) {
+        if (a == 1) {
             System.out.println("It's not onion! Enter you answer: ");
             String attem1 = scan.next();
             System.out.println(attem1.equals(correct));
@@ -19,7 +19,7 @@ public class Puzzle {
                 System.out.println("No.. Mb on another time");
                 System.exit(0);
             }
-        }else if (a == 2) {
+        } else if (a == 2) {
             System.out.println("Enter you answer");
             String attem1 = scan.next();
             if (attem1.equals(correct)) {
@@ -39,7 +39,7 @@ public class Puzzle {
             else
                 System.out.println("No.. Mb on another time");
 
-        }else
+        } else
             System.out.println("You entered invalid value");
     }
 }
