@@ -38,14 +38,15 @@ public class Puzzle {
                     } else {
                         System.out.println("No.. Try again! 3");
                         String attem3 = scan.nextLine();
-                        if (attem3.equals(hint))
+                        if (attem3.equals(hint)) {
                             System.out.println("You don't have the hint. Enter your answer");
-                        String attem31 = scan.nextLine();
-                        if (attem31.equals(correct)) {
-                            System.out.println("Win!!");
-                            System.exit(0);
-                        } else
-                            System.out.println("No.. Mb on another time");
+                            String attem31 = scan.nextLine();
+                            if (attem31.equals(correct)) {
+                                System.out.println("Win!!");
+                                System.exit(0);
+                            } else
+                                System.out.println("No.. Mb on another time");
+                        }
                     }
                 } else if (attem2.equals(correct)) {
                     System.out.println("Win!!");
