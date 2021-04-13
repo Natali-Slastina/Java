@@ -17,6 +17,5 @@ public class Ratecon {
             double money = cash * rate;
             System.out.printf("Your money is " + "%.2f", money);
         }
-
     }
 }
