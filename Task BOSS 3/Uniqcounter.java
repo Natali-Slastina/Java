@@ -17,7 +17,7 @@ public class Uniqcounter {
                 System.out.print("Enter your string " + (i + 1) + ": ");
                 lines[i] = scan.next();
             }
-            int maxuniq = 0; // максимальное уникальное
+            int maxchars = 0; // максимальное уникальное
             int indexsrt = 0; //индекс строки с макс
             //перебор по строкам
             for (int i = 0; i < lines.length; i++) {
@@ -25,21 +25,20 @@ public class Uniqcounter {
                 //перебор по символам в строке
                 for (int j = 0; j < lines[i].length(); j++) {
                     char c = lines[i].charAt(j);
-                    boolean isUnique = true;
+                    boolean found = false;
                     //сравнение символа с другими символами в строке
-                    for (int k = 0; k < lines[i].length(); k++) {
-                        if (k == j)
-                            continue;
-                        if (c == lines[i].charAt(k)) {
-                            isUnique = false;
+                    for (int k = 0; k < j; k++) {
+                        char d = lines[i].charAt(k);
+                        if (c == d) {
+                            found = true;
                             break;
                         }
                     }
-                    if (isUnique)
+                    if (found == false)
                         chars++;
                 }
-                if (chars > maxuniq) {
-                    maxuniq = chars;
+                if (chars > maxchars) {
+                    maxchars = chars;
                     indexsrt = i;
                 }
             }
