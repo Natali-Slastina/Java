@@ -25,7 +25,7 @@ public class Uniqcounter {
                 //перебор по символам в строке
                 for (int j = 0; j < lines[i].length(); j++) {
                     char c = lines[i].charAt(j);
-                    boolean found = false;
+                    boolean found = false; //др вхождений нет - уникальное
                     //сравнение символа с другими символами в строке
                     for (int k = 0; k < j; k++) {
                         char d = lines[i].charAt(k);
